@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --primary-color: #fafafa;
+  --secondary-color: #fff;
+  --login-signup: #b2dffc;
+  --link-fb: #3b5998;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5vmin;
+  min-block-size: 100%;
+  min-inline-size: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main */
+#container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2em;
+  min-height: 100vh;
+  max-width: 769px;
+}
+
+/* Left container */
+.left_container {
+  width: 384.5px;
+}
+
+@media only screen and (max-width: 839px) {
+  .left_container {
+    display: none;
+  }
+}
+
+/* Right container */
+.right_container {
+  width: 384.5px;
+}
+
+@media only screen and (max-width: 839px) {
+  .right_container {
+    margin: 0 auto;
+  }
+}
+
+.right_container .group {
+  background-color: var(--secondary-color);
+  border: 1px solid #dbdbdb;
+  margin-bottom: 1em;
+  padding: 0 2.5em;
+}
+
+.right_container .form_login img {
+  display: block;
+  margin: 2em auto;
+}
+
+.right_container .form_login input {
+  border: 1px solid #dbdbdb;
+  display: block;
+  height: 2.5em;
+  margin-bottom: 0.5em;
+  padding: 0 0.5em;
+  width: 100%;
+}
+
+.right_container .form_login button {
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.right_container .form_login .btn_login {
+  background-color: var(--login-signup);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5em 0;
+  transition: 0.2s ease-in 50ms;
+}
+
+.right_container .form_login .btn_login:hover {
+  background-color: #0195f6;
+  transition: 0.2s ease-out 50ms;
+}
+
+.right_container .form_login .btn_facebook {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  padding: 0.5em 0;
+}
+
+.right_container .form_login .login_fb {
+  color: var(--link-fb);
+}
+
+.right_container .form_login a {
+  color: var(--link-fb);
+  display: block;
+  font-size: 2vmin;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.right_container .sign_up {
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+.right_container .sign_up a {
+  color: #0195f6;
+  font-weight: 500;
+}
+
+.right_container .last_group {
+  background-color: none;
+  border: none;
+  text-align: center;
+}
+
+.right_container .last_group p {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.right_container .last_group img {
+  width: 130px;
+  height: 40px;
+}
